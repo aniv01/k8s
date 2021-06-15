@@ -19,3 +19,5 @@ spec:
         image: nginx:1.16
         ports:
         - containerPort: 8080
+
+# Deployment --> Replicaset --> Pods --> Container
