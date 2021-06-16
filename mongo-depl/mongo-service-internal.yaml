@@ -9,3 +9,13 @@ spec:
     - protocol: TCP
       targetPort: 27017
       port: 27017
+
+
+# sudo kubectl get svc
+# NAME              TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)     AGE
+# kubernetes        ClusterIP   10.96.0.1       <none>        443/TCP     2d20h
+# mongodb-service   ClusterIP   10.99.191.232   <none>        27017/TCP   36s
+# sudo kubectl get endpoints
+# NAME              ENDPOINTS           AGE
+# kubernetes        10.82.219.30:8443   2d20h
+# mongodb-service   172.17.0.5:27017    38s
