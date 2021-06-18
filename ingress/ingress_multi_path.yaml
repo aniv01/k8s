@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: multi_path_ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: yahoo.com
+    http:
+      paths:
+      - path: /mail
+        backend:
+          serviceName: mail-web-service
+          servicePort: 443
+      - path: /calendar
+        backend:
+          serviceName: 
