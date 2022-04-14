@@ -32,4 +32,3 @@
   - Being tied to 1 specific node
   - Surviving cluster crashes
 Note: For DB persistence, always use the remote volume types.
-
