@@ -23,3 +23,4 @@
   - PV needs to be created before PVC
 - Dynamic
   - PV is created at the same time of PVC
+  - In case of dynamic PVC's, when the developer doesn't mention the storage class under PVC config a default storage class will be applied.
