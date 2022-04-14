@@ -4,6 +4,7 @@
   - Piece of pre-provisioned storage inside the k8s cluster
 - Persistent Volume (Piece of Storage in the cluster)
   - Storage request by a user (developer)
+  - Persistent Volumes are not namespaced, they are accessible to the whole cluster.
 - Life Cycle Of Persistent Volume
   - Provisioning
     - Cluster administrator creates the storage volume. These can be any storage type such as NFS, Block etc..
