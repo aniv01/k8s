@@ -2,6 +2,7 @@
 ----
 - Persistent Volume Claim (Request For Storage)
   - Piece of pre-provisioned storage inside the k8s cluster
+  - Claims must me in same namespace where the POD exists.
 - Persistent Volume (Piece of Storage in the cluster)
   - Storage request by a user (developer)
   - Persistent Volumes are not namespaced, they are accessible to the whole cluster.
