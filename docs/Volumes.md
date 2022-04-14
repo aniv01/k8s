@@ -25,3 +25,10 @@
 - Dynamic
   - PV is created at the same time of PVC
   - In case of dynamic PVC's, when the developer doesn't mention the storage class under PVC config a default storage class will be applied.
+#### Local vs Remote Volume Types
+- Each volume type has its own usecase.
+- Local volume type violates the below data persistent rules.
+  - Being tied to 1 specific node
+  - Surviving cluster crashes
+Note: For DB persistence, always use the remote volume types.
+
